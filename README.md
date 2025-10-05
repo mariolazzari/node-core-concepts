@@ -171,3 +171,39 @@ module.exports = class EventEmitter {
 ## Understanding Buffers
 
 ### Buffers introduction
+
+In **computer science**, a **buffer** is:
+
+> **A temporary memory area used to store data while it is being transferred between two locations or processes.**
+
+#### 🔹 Detailed Explanation
+
+A buffer acts as an **intermediate storage** that helps manage differences in:
+
+* **Speed** (e.g., between a fast CPU and a slow disk)
+* **Data rate** (e.g., between a network stream and an application)
+* **Processing timing** (e.g., between producer and consumer processes)
+
+#### 🔹 Common Examples
+
+* **I/O buffering:** When reading from or writing to a disk, data is stored in a buffer to reduce the number of direct I/O operations.
+* **Network buffering:** Packets received over a network are stored in a buffer before being processed.
+* **Keyboard buffer:** Keystrokes are stored temporarily before being read by a program.
+* **Video/audio buffering:** Media data is preloaded into a buffer to ensure smooth playback.
+
+#### 🔹 Purpose
+
+* Increases **efficiency** by reducing waiting times.
+* Enables **asynchronous operations** (producer and consumer can work independently).
+* Helps manage **burst data** or uneven data flow.
+
+#### 🔹 Related Terms
+
+* **Buffer overflow:** When more data is written to a buffer than it can hold, causing potential errors or security vulnerabilities.
+* **Circular buffer (ring buffer):** A buffer that wraps around when full, commonly used in streaming data scenarios.
+
+Would you like a diagram or analogy (e.g., a “water bucket” analogy) to visualize how buffering works?
+
+### Binary buffers
+
+### Hexadecimal numbers
