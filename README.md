@@ -202,8 +202,64 @@ A buffer acts as an **intermediate storage** that helps manage differences in:
 * **Buffer overflow:** When more data is written to a buffer than it can hold, causing potential errors or security vulnerabilities.
 * **Circular buffer (ring buffer):** A buffer that wraps around when full, commonly used in streaming data scenarios.
 
-Would you like a diagram or analogy (e.g., a “water bucket” analogy) to visualize how buffering works?
+### Binary numbers
 
-### Binary buffers
+A **binary number** is a number expressed in the **base-2 numeral system**, which uses only two digits: **0** and **1**.
+
+Each digit in a binary number is called a **bit** (short for *binary digit*).
+
+In the binary system:
+
+* Each position represents a power of **2**, starting from the rightmost bit (which is (2^0)).
+* Example:
+  (1011_2 = (1 \times 2^3) + (0 \times 2^2) + (1 \times 2^1) + (1 \times 2^0) = 8 + 0 + 2 + 1 = 11_{10})
+
+#### Summary
+
+* **Base:** 2
+* **Digits used:** 0 and 1
+* **Used in:** Computers and digital systems, because electronic circuits can easily represent two states (on/off, true/false, 1/0).
+
+Would you like me to include a short diagram showing how binary numbers work?
 
 ### Hexadecimal numbers
+
+A **hexadecimal number** is a number expressed in the **base-16 numeral system**, which uses **16 symbols** to represent values.
+
+#### 🔢 The digits in hexadecimal
+
+* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+* A, B, C, D, E, F — which represent the decimal values 10 to 15.
+
+#### ⚙️ How it works
+
+Each position in a hexadecimal number represents a **power of 16**, starting from the rightmost digit (which is (16^0)).
+
+**Example:**
+[
+2AF_{16} = (2 \times 16^2) + (10 \times 16^1) + (15 \times 16^0)
+]
+[
+= (2 \times 256) + (10 \times 16) + (15 \times 1)
+]
+[
+= 512 + 160 + 15 = 687_{10}
+]
+
+#### 💡 Uses
+
+* Commonly used in **computer science** and **digital electronics** because it’s more compact than binary.
+* Each hexadecimal digit corresponds to **4 binary bits** (since (16 = 2^4)).
+
+  * Example:
+    (A3_{16} = 1010,0011_2)
+
+#### ✅ Summary
+
+| System      | Base | Digits   | Example  |
+| ----------- | ---- | -------- | -------- |
+| Decimal     | 10   | 0–9      | 245      |
+| Binary      | 2    | 0–1      | 11110101 |
+| Hexadecimal | 16   | 0–9, A–F | F5       |
+
+Would you like me to show how to convert between binary and hexadecimal?
