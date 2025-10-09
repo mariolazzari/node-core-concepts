@@ -180,45 +180,45 @@ In **computer science**, a **buffer** is:
 
 A buffer acts as an **intermediate storage** that helps manage differences in:
 
-* **Speed** (e.g., between a fast CPU and a slow disk)
-* **Data rate** (e.g., between a network stream and an application)
-* **Processing timing** (e.g., between producer and consumer processes)
+- **Speed** (e.g., between a fast CPU and a slow disk)
+- **Data rate** (e.g., between a network stream and an application)
+- **Processing timing** (e.g., between producer and consumer processes)
 
 #### 🔹 Common Examples
 
-* **I/O buffering:** When reading from or writing to a disk, data is stored in a buffer to reduce the number of direct I/O operations.
-* **Network buffering:** Packets received over a network are stored in a buffer before being processed.
-* **Keyboard buffer:** Keystrokes are stored temporarily before being read by a program.
-* **Video/audio buffering:** Media data is preloaded into a buffer to ensure smooth playback.
+- **I/O buffering:** When reading from or writing to a disk, data is stored in a buffer to reduce the number of direct I/O operations.
+- **Network buffering:** Packets received over a network are stored in a buffer before being processed.
+- **Keyboard buffer:** Keystrokes are stored temporarily before being read by a program.
+- **Video/audio buffering:** Media data is preloaded into a buffer to ensure smooth playback.
 
 #### 🔹 Purpose
 
-* Increases **efficiency** by reducing waiting times.
-* Enables **asynchronous operations** (producer and consumer can work independently).
-* Helps manage **burst data** or uneven data flow.
+- Increases **efficiency** by reducing waiting times.
+- Enables **asynchronous operations** (producer and consumer can work independently).
+- Helps manage **burst data** or uneven data flow.
 
 #### 🔹 Related Terms
 
-* **Buffer overflow:** When more data is written to a buffer than it can hold, causing potential errors or security vulnerabilities.
-* **Circular buffer (ring buffer):** A buffer that wraps around when full, commonly used in streaming data scenarios.
+- **Buffer overflow:** When more data is written to a buffer than it can hold, causing potential errors or security vulnerabilities.
+- **Circular buffer (ring buffer):** A buffer that wraps around when full, commonly used in streaming data scenarios.
 
 ### Binary numbers
 
 A **binary number** is a number expressed in the **base-2 numeral system**, which uses only two digits: **0** and **1**.
 
-Each digit in a binary number is called a **bit** (short for *binary digit*).
+Each digit in a binary number is called a **bit** (short for _binary digit_).
 
 In the binary system:
 
-* Each position represents a power of **2**, starting from the rightmost bit (which is (2^0)).
-* Example:
-  (1011_2 = (1 \times 2^3) + (0 \times 2^2) + (1 \times 2^1) + (1 \times 2^0) = 8 + 0 + 2 + 1 = 11_{10})
+- Each position represents a power of **2**, starting from the rightmost bit (which is (2^0)).
+- Example:
+  (1011*2 = (1 \times 2^3) + (0 \times 2^2) + (1 \times 2^1) + (1 \times 2^0) = 8 + 0 + 2 + 1 = 11*{10})
 
 #### Summary
 
-* **Base:** 2
-* **Digits used:** 0 and 1
-* **Used in:** Computers and digital systems, because electronic circuits can easily represent two states (on/off, true/false, 1/0).
+- **Base:** 2
+- **Digits used:** 0 and 1
+- **Used in:** Computers and digital systems, because electronic circuits can easily represent two states (on/off, true/false, 1/0).
 
 Would you like me to include a short diagram showing how binary numbers work?
 
@@ -228,8 +228,8 @@ A **hexadecimal number** is a number expressed in the **base-16 numeral system**
 
 #### 🔢 The digits in hexadecimal
 
-* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-* A, B, C, D, E, F — which represent the decimal values 10 to 15.
+- 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+- A, B, C, D, E, F — which represent the decimal values 10 to 15.
 
 #### ⚙️ How it works
 
@@ -248,11 +248,11 @@ Each position in a hexadecimal number represents a **power of 16**, starting fro
 
 #### 💡 Uses
 
-* Commonly used in **computer science** and **digital electronics** because it’s more compact than binary.
-* Each hexadecimal digit corresponds to **4 binary bits** (since (16 = 2^4)).
+- Commonly used in **computer science** and **digital electronics** because it’s more compact than binary.
+- Each hexadecimal digit corresponds to **4 binary bits** (since (16 = 2^4)).
 
-  * Example:
-    (A3_{16} = 1010,0011_2)
+  - Example:
+    (A3\_{16} = 1010,0011_2)
 
 #### ✅ Summary
 
@@ -262,4 +262,6 @@ Each position in a hexadecimal number represents a **power of 16**, starting fro
 | Binary      | 2    | 0–1      | 11110101 |
 | Hexadecimal | 16   | 0–9, A–F | F5       |
 
-Would you like me to show how to convert between binary and hexadecimal?
+### Programming calculator
+
+### Characters coding
