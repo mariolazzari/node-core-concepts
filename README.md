@@ -265,3 +265,35 @@ Each position in a hexadecimal number represents a **power of 16**, starting fro
 ### Programming calculator
 
 ### Characters coding
+
+#### Character sets
+
+Characters that a system uses for a representation, assigning a numeric value to those symbols.
+
+#### Unicode
+
+Standard for representing characters world wide.
+More than 150k characters
+
+#### ASCII
+
+It defines 128 characters, lowercase amd uppercase.
+
+```sh
+man ascii
+```
+
+#### Encoders
+
+Something meaningful -> 1010 1010 0011....
+
+#### Decoders
+
+0011 1010 0101 ... -> Something meaningful
+
+#### Characters encoding
+
+A system for assigning a sequence of bytes to a character.
+UTF-8 is the most common one.
+
+### Concept of buffers
