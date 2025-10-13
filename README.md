@@ -424,3 +424,87 @@ console.log("bufSlow", bufSlow.toString());
 [Endianness](https://www.youtube.com/watch?v=NcaiHcBvDR4)
 [Floats](https://www.youtube.com/watch?v=dQhj5RGtag0)
 [Binary addition](https://www.youtube.com/watch?v=sJXTo3EZoxM&list=PL0o_zxa4K1BXCpQbUdf0htZE8SS0PYjy-&index=19)
+
+## File system
+
+### Introduction to fs
+
+```js
+const fs = require("fs");
+
+const content = fs.readFileSync("./text.txt");
+console.log(content.toString("utf-8"));
+```
+
+### What is a file
+
+A file is a container in a storage system (like a hard drive, SSD, or cloud storage) that holds data, which can be text, images, audio, video, programs, or other types of information.
+Each file has a name and usually an extension that indicates its type
+
+#### Key Characteristics
+
+- Name: Identifies the file (e.g., data.csv).
+- Extension: Indicates file type or format (e.g., .txt, .pdf, .exe).
+- Path: The location of the file within the file system (e.g., C:\Users\John\Documents\data.txt).
+- Size: Amount of data the file contains (in bytes, kilobytes, etc.).
+- Timestamps: Information such as creation date, modification date, and last access date.
+- Permissions: Define who can read, write, or execute the file.
+
+#### Types of Files
+
+- Text files – Contain readable characters (e.g., .txt, .csv, .html).
+- Binary files – Contain data in a format readable only by specific programs (e.g., .exe, .jpg, .mp3).
+- Executable files – Contain programs that the computer can run (e.g., .exe, .app).
+- System files – Used by the operating system to function properly (e.g., .sys, .dll).
+
+#### Operations on Files
+
+- Create – Make a new file.
+- Read – Access the file’s data.
+- Write – Modify or add data.
+- Delete – Remove the file from storage.
+- Open/Close – Begin or end interaction with the file.
+
+### NodeJs and files
+
+NodeJS <-> OS
+
+### 3 ways to do the same thing
+
+- Promises API: [docs](https://nodejs.org/api/fs.html#promises-api)
+- Callback API: [docs](https://nodejs.org/api/fs.html#callback-api)
+- Synchronous API
+
+```js
+const fs = require("fs/promises");
+
+(async () => {
+  try {
+    await fs.copyFile("command.txt", "copied-promise.txt");
+  } catch (error) {
+    console.error(error);
+  }
+})();
+```
+
+```js
+const fs = require("fs");
+
+fs.copyFile("command.txt", "copied-cb.txt", err => {
+  if (err) {
+    console.error(err);
+  }
+});
+```
+
+```js
+const fs = require("fs");
+
+fs.copyFileSync("command.txt", "copied-sync.txt");
+```
+
+### Watching command file for changes
+
+```js
+
+```
